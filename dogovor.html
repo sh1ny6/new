@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Момент кредит</title>
+    <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/style.css?ver=1.12">
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NX32RTQ7');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NX32RTQ7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(90603350, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/90603350" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+    <script type="text/javascript">!function () {
+        var t = document.createElement("script");
+        t.type = "text/javascript", t.async = !0, t.src = 'https://vk.com/js/api/openapi.js?169', t.onload = function () {
+            VK.Retargeting.Init("VK-RTRG-1504633-4vQkt"), VK.Retargeting.Hit()
+        }, document.head.appendChild(t)
+    }();</script>
+    <noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1504633-4vQkt" style="position:fixed; left:-999px;" alt=""/>
+    </noscript>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '860549711947878');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=860549711947878&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+<div class="d-none">
+    <button id="showModal" data-bs-toggle="modal"
+            data-bs-target="#callbackResponseModal"></button>
+</div>
+<div class="d-none">
+    <button id="showError" data-bs-toggle="modal"
+            data-bs-target="#errorModal"></button>
+</div>
+<div class="modal fade" id="errorModal" tabindex="-1"
+     aria-labelledby="errorModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content callback-model-form-container">
+            <div class="modal-header callback-model-header callback-model-header-response">
+                <button type="button" class="btn-close callback-model-close-btn" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <h5 class="callback-response-modal-header callback-response-modal-header--error">Ошибка!</h5>
+            <p class="callback-response-modal-paragraph">Попробуйте еще раз или свяжитесь с нами.</p>
+        </div>
+    </div>
+</div>
+<!-- modal callback form -->
+<div class="modal fade" id="callbackModelForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content callback-model-form-container position-relative">
+            <div class="modal-header callback-model-header">
+                <button type="button" class="btn-close callback-model-close-btn position-relative index-20"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <form class="callback-form">
+                <label class="d-block callback-form-label" for="callback-model-input-name">Укажите ваше имя</label>
+                <div class="callback-form-input-wrapper">
+                    <input name="name" id="callback-model-input-name" type="text" placeholder="Павел">
+                </div>
+                <label class="d-block callback-form-label" for="callback-model-input-phone">Телефон для связи</label>
+                <div class="callback-form-input-wrapper">
+                    <input id="callback-model-input-phone" type="tel" placeholder="+375 (__)"
+                           name="phoneNumber">
+                </div>
+                <button class="button callback-form-button" type="submit">заказать звонок
+                </button>
+                <img class="ajax-loader-callbackModel d-none" src="./src/images/loader.gif" alt="loading..">
+                <input class="utm_source" type="hidden" name="utm_source" value="Отсутствует">
+                <input class="utm_medium" type="hidden" name="utm_medium" value="Отсутствует">
+                <input class="utm_campaign" type="hidden" name="utm_campaign" value="Отсутствует">
+                <input class="utm_content" type="hidden" name="utm_content" value="Отсутствует">
+                <input class="utm_term" type="hidden" name="utm_term" value="Отсутствует">
+            </form>
+        </div>
+    </div>
+</div>
+<!-- modal response success form -->
+<div class="modal fade" id="callbackResponseModal" tabindex="-1"
+     aria-labelledby="callbackResponseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content callback-model-form-container">
+            <div class="modal-header callback-model-header callback-model-header-response">
+                <button type="button" class="btn-close callback-model-close-btn" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <h5 class="callback-response-modal-header">Спасибо за заявку!</h5>
+            <p class="callback-response-modal-paragraph">В ближайшее время с вами свяжется наш специалист</p>
+        </div>
+    </div>
+</div>
+
+<div class="ajax-loader ajax-loader--dogovor d-none">
+    <div class="ajax-background">
+    </div>
+    <img src="./src/images/loader.gif" alt="loading..">
+</div>
+<header>
+    <div class="h-100 d-flex justify-content-between align-items-center container">
+        <div class="logotype-container">
+            <a href="./index.html">
+                <picture>
+                    <source srcset="./src/images/logo.webp">
+                    <img class="logotype-image" src="./src/images/logo.png" alt="МоментКредит">
+                </picture>
+            </a>
+        </div>
+        <button class="phone-button d-lg-none contact-icon-container d-flex justify-content-center align-items-center"
+                id="dropDownHeaderContacts" data-bs-toggle="dropdown" aria-expanded="false">
+            <picture>
+                <source srcset="./src/images/icons/phone-icon.webp">
+                <img class="phone-icon" src="./src/images/icons/phone-icon.png" alt="Контакты">
+            </picture>
+        </button>
+        <div class="dropdown-menu phone-dropdown d-lg-none dropdown-menu-end" aria-labelledby="dropDownHeaderContacts">
+            <a class="d-block dropdown-header-number" href="tel:+375255420248">+375 (25) 542-02-48</a>
+            <a class="d-block dropdown-header-number" href="tel:+375447539831">+375 (44) 753-98-31</a>
+            <a class="d-block dropdown-header-callback" data-bs-toggle="modal" data-bs-target="#callbackModelForm">Заказать
+                обратный звонок</a>
+        </div>
+        <div class="d-lg-flex d-none align-items-center">
+            <a class="d-inline-block header-phone-number" href="tel:+375255420248">+375 25 542-02-48</a>
+            <a class="d-inline-block header-phone-number" href="tel:+375447539831">+375 44 753-98-31</a>
+            <button class="button header-button" data-bs-toggle="modal" data-bs-target="#callbackModelForm">Обратный
+                звонок
+            </button>
+        </div>
+    </div>
+</header>
+<main class="dogovor-page">
+    <section class="page-description container">
+        <h1 class="guarantee-subheader text-center">Электронная подпись публичного договора возмездного оказания
+            услуг</h1>
+        <p>ООО "Момент Кредит" публикует настоящую публичную оферту с целью заключения публичного договора оказания
+            консультационных услуг с каждым физическим лицом (далее - Клиент), обратившимся к Консультанту для получения
+            таких услуг.
+        </p>
+        <p>
+            Клиент, заполнивший и отправивший настоящую Заявку (форму) на официальный сайт Консультанта, тем самым
+            заключает публичный договор с ООО "Момент Кредит" на предоставление консультационных услуг путем
+            присоединения
+            к размещенному на сайте Договору, то есть посредством принятия Клиентом условий <a
+                class="pdf-link-page-description" href="./src/pdf/dogovorMKredit.pdf" target="blank">настоящего
+            договора</a> в целом,
+            без каких-либо условий, изъятий, оговорок
+
+        </p>
+    </section>
+    <section class="section-form container">
+        <form id="form-dogovor" class="form-dogovor">
+            <label class="form-text-label" for="surname">Фамилия</label>
+            <input class="dogovor-form-input" type="text" placeholder="Иванов" id="surname" name="surname">
+            <label class="form-text-label" for="name">Имя</label>
+            <input class="dogovor-form-input" type="text" placeholder="Павел" id="name" name="name">
+            <label class="form-text-label" for="secondName">Отчество</label>
+            <input class="dogovor-form-input" type="text" placeholder="Олегович" id="secondName" name="secondName"
+            >
+            <label class="form-text-label" for="address">Адрес регистрации (по паспорту)</label>
+            <input class="dogovor-form-input" type="text"
+                   placeholder="г.Минск, ул. Кальварийская 23" id="address"
+                   name="address"
+            >
+            <div class="d-flex flex-column flex-sm-row justify-content-sm-between">
+                <div class="flex-grow-1 me-sm-4">
+                    <label class="form-text-label passport-num-label" for="passportNumber">Идентификационный
+                        номер</label>
+                    <input class="dogovor-form-input" type="text" placeholder="11111РВ111111007" id="passportNumber"
+                           name="passportNumber"
+                    >
+                </div>
+                <div class="flex-grow-4">
+                    <label class="form-text-label" for="birthday">Дата рождения</label>
+                    <input class="dogovor-form-input" type="text" maxlength="10" placeholder="01.01.1970" id="birthday"
+                           name="birthday">
+                </div>
+
+            </div>
+            <div class="position-relative dogovor-form-number-container">
+                <label class="form-text-label" for="phone-number">Номер телефона</label>
+                <input class="js-tel dogovor-form-input"
+                       id="phone-number" type="tel"
+                       placeholder="+375 (__)"
+                       name="phoneNumber">
+                <picture>
+                    <source srcset="./src/images/icons/belarus-icon.webp" type="image/webp">
+                    <img class="country-phone-icon position-absolute" src="./src/images/icons/belarus-icon.png"
+                         alt="Bel" loading="lazy">
+                </picture>
+            </div>
+            <label class="form-text-label" for="nawa_oplata">Сумма оплаты за наши услуги</label>
+            <input class="dogovor-form-input" type="text"
+                   id="nawa_oplata"
+                   name="nawa_oplata"
+            >
+            <div class="dogovor-custom-checkbox-container">
+                <input class="form-check-input dogovor-custom-checkbox" type="checkbox" name="checkDogovor"
+                       id="checkDogovor">
+                <label class="dogovor-custom-checkbox-label" for="checkDogovor">С условиями <a
+                        class="pdf-link-page-description" href="./src/pdf/dogovorMKredit.pdf"
+                        target="blank">договора</a>
+                    согласен(а) и
+                    ознакомлен(а)</label>
+            </div>
+            <div>
+                <input class="form-check-input dogovor-custom-checkbox" type="checkbox" name="checkPrice"
+                       id="checkPrice">
+                <label class="dogovor-custom-checkbox-label" for="checkPrice">С прейскурантом согласен(а) и
+                    ознакомлен(а)</label>
+            </div>
+
+            <button class="button form-dogovor-submit-btn" type="submit">Подписать</button>
+            <input type="hidden" id="userInfo" name="userInfo" value="Не удалось получить данные о устройстве">
+            <input type="hidden" id="userInfo2" name="userInfo2" value="Не удалось получить данные о устройстве">
+        </form>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between">
+            <div class="d-flex justify-content-between justify-content-sm-around justify-content-lg-end order-lg-2 requisites-and-contacts-wrapper">
+                <div class="contacts-container">
+                    <h3 class="footer-header footer-header_contacts">Контакты</h3>
+                    <div class="d-flex flex-column flex-md-row">
+                        <div class="d-flex flex-column footer-header_contacts-phone-wrapper">
+                            <a class="footer-contact-link" href="tel:+375447539831">+375 (44) 753-98-31</a>
+                            <a class="footer-contact-link" href="tel:+375255420248">+375 (25) 542-02-48</a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a class="footer-contact-link" href="http://t.me/Momentkredit" target="_blank">t.me/momentcredit</a>
+                            <a class="footer-contact-link" href="mailto:moment.kredit@bk.ru">moment.kredit@bk.ru</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="requisites-container">
+                    <h3 class="footer-header">Реквизиты</h3>
+                    <p class="requisites-description">ООО "Момент Кредит", 193652121</p>
+                    <a class="footer-pdf-link" href="./src/pdf/dogovorMKredit.pdf" target="blank">Публичный
+                        договор</a>
+                    <a class="footer-pdf-link" href="./src/pdf/politica_conf.pdf" target="blank">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="header-logo-container">
+                <a href="./index.html">
+                    <picture>
+                        <source srcset="./src/images/logo.webp">
+                        <img class="logotype-image" src="./src/images/logo.png" alt="МоментКредит">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-lg-column justify-content-lg-between site-info-container site-info-container_address align-items-lg-start">
+            <p class="site-description site-description__address">
+                Юридический адрес: Республика Беларусь, г. Минск ул. Мележа 5/2 оф.1603
+            </p>
+            <p class="site-description site-description__address">
+                Режим работы: пн-пт 10:00-20:00, сб-вс выходной
+            </p>
+            <p class="site-description site-description__address_header">
+                Наши отделения:
+            </p>
+            <p class="site-description site-description__address_header">
+                Могилевская область, г. Кличев, ул. Ленинская 78 Дом Быта 3
+            </p>
+            <p class="site-description site-description__address">
+                Режим работы: пн-пт 09:00-18:00, сб 10:00-14:00, вс выходной
+            </p>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between site-info-container align-items-lg-end">
+            <p class="site-description site-description-president-info">
+                © Мы не оказываем услуги по оформлению и предоставлению населению микрозаймов и кредитов, регулируемых Указом Президента №394 от 23.10.2019 "О привлечении и предоставлении займов, деятельности микрофинансовых организаций". Данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой.</p>
+            <div>
+                <p class="developed-by text-lg-end">Разработан студией <a class="developed-by_name"
+                                                                          href="https://telegram.me/kamazv8"
+                                                                          target="_blank">yaProduction</a>
+                </p>
+                <p class="product-name text-lg-end">© Момент Кредит, 2022</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="./src/js/detect.js"></script>
+<script src="./src/js/indexDogovor.js?ver=1.8"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

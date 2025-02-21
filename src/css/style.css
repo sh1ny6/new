@@ -446,7 +446,6 @@ header {
     line-height: 24px;
     color: #323232;
 }
-
 .guarantee-description {
     font-family: 'Montserrat', 'Times New Roman', sans-serif;
     font-style: normal;
@@ -456,11 +455,9 @@ header {
     color: #323232;
     margin: 10px 0 0 0;
 }
-
 .guarantee-description_bold {
     font-weight: 600;
 }
-
 .pdf-link {
     font-family: 'Montserrat', 'Times New Roman', sans-serif;
     font-style: normal;
@@ -482,6 +479,11 @@ header {
     margin-bottom: 20px;
 }
 /* partners */
+.section-partners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .partners-header {
     font-family: 'Montserrat', 'Times New Roman', sans-serif;
     font-style: normal;
@@ -489,25 +491,31 @@ header {
     font-size: 32px;
     line-height: 39px;
     color: #323232;
-    margin-top: 80px;
+    margin-top: 100px;
     text-align: center;
 }
-.partners__img{
-    max-width: 500px;
-    max-height: 200px;
+.partners-div__item{
+    box-sizing: border-box;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 .partners-div{
-    margin-bottom: 50px;
+    max-width: 1100px;
+    margin-bottom: 40px;
     margin-top: 30px;
     display: flex;
-   justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
-.partners-vtb{
+/* .partners-vtb{
     max-height: 120px;
     max-width: 350px;
     margin-top: 20px;
-}
+} */
 
 
 
@@ -923,9 +931,9 @@ input.error-input, .dogovor-custom-checkbox--error {
 }
 
 @media(min-width: 100px){
-    .partners-vtb{
+    /* .partners-vtb{
         transform: scale(0.5);
-    }
+    } */
 }
 
 @media (max-width: 360px) {
@@ -939,9 +947,9 @@ input.error-input, .dogovor-custom-checkbox--error {
     .alert--error {
         width: 80%;
     }
-    .partners-vtb{
+    /* .partners-vtb{
         transform: scale(0.6);
-    }
+    } */
     .partners-div{
         margin-bottom: 50px;
     }
@@ -991,9 +999,9 @@ input.error-input, .dogovor-custom-checkbox--error {
     .partners-div{
         margin-top: 30px;
     }
-    .partners-vtb{
+    /* .partners-vtb{
         transform: scale(0.7);
-    }
+    } */
     
 
     /* request section */
@@ -1054,9 +1062,9 @@ input.error-input, .dogovor-custom-checkbox--error {
         font-size: 13px;
     }
     /*partners section*/
-    .partners-vtb{
+    /* .partners-vtb{
         margin-right: 60px;
-    }
+    } */
 
     /* faq section */
     .accordion-button {
@@ -1235,14 +1243,12 @@ input.error-input, .dogovor-custom-checkbox--error {
     /* partners section */
    
     .partners-div{
-        justify-content: space-around;
-        flex-wrap: nowrap;
         margin-top: 130px;
     }
-    .partners-vtb{
+    /* .partners-vtb{
         margin-right: 0;
         margin-left: 20px;
-    }
+    } */
 
     /* advantages section */
     .advantage-card_first-row {
@@ -1359,7 +1365,7 @@ input.error-input, .dogovor-custom-checkbox--error {
 
     /* partners section*/
     .partners-header {
-        margin: 85px 0 50px 0;
+        margin: 85px 0 0 0;
         font-size: 36px;
     }
     /*    faq section */
@@ -1548,7 +1554,7 @@ input.error-input, .dogovor-custom-checkbox--error {
     }
     .partners-div{
         margin-top: 80px;
-        margin-bottom: 120px;
+        margin-bottom: 40px;
     }
 }
 
@@ -2033,19 +2039,17 @@ input[type=range]::-webkit-slider-thumb {
         font-size: 12px;
     }
 }
-@media(max-width:460px){
-    .advantage-card-ext__p{
-        font-size: 12px;
-        padding: 0px 10px;
-    }
-    .welcome-header{
-        padding-top: 20px;
-    }
-}
+
 @media(max-width:1024px){
     .welcome-header{
         margin-top: 36px;
         line-height: 100%;
+    }
+}
+@media(max-width:768px){
+    .partners-div__item{
+        width: 33%;
+        padding: 20px;
     }
 }
 @media(max-height:740px){
@@ -2062,5 +2066,20 @@ input[type=range]::-webkit-slider-thumb {
     }
     .advantages-section{
         padding-bottom: 80px;
+    }
+}
+@media(max-width:460px){
+    .advantage-card-ext__p{
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+    .welcome-header{
+        padding-top: 20px;
+    }
+    .partners-div__item{
+        width:45%;
+    }
+    .partners-div{
+        margin-bottom: 10px;
     }
 }

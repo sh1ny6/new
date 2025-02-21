@@ -13,7 +13,7 @@
     <title>Момент кредит</title>
     <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
     <link href="./src/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/style.css?ver=1.4">
+    <link rel="stylesheet" href="./src/css/style.css?ver=1.5">
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -161,7 +161,7 @@
         </div>
 
         <div class="callbackQuiz_step callbackQuiz_step2 d-none">
-            <h4 for="callback-model-input-name">Как вы работаете?</h4>
+            <h4 for="callback-model-input-name">Форма собственности?</h4>
             <div class="progress">
                 <div class="progress-bar" role="progressbar"
                      style="width: 66%;"
@@ -182,6 +182,9 @@
                 </button>
                 <button data-button-value="ОАО">
                     <span></span> Открытое акционерное общество
+                </button>
+                <button data-button-value="Другое">
+                    <span></span> Другое
                 </button>
                 
             </div>
@@ -416,7 +419,7 @@
                 <div class="advantage-card-ext">
                     <h3 class="advantage-card-ext__h3">3</h3>
                     <div class="advantage-card-ext__svg3"></div>
-                    <p class="advantage-card-ext__p">Скоростное рассмотрение заявок</p>
+                    <p class="advantage-card-ext__p">Быстрое рассмотрение заявок</p>
                 </div>
                 <img class="union-decorator d-none d-lg-block" src="./src/images/Union.png"
                      alt="-"> 
@@ -488,7 +491,7 @@
                                 </picture>
                             </div>
                             <div class="d-md-flex flex-md-column review-comment-container justify-content-lg-between">
-                                <h3 class="review-name order-md-2">ИП "Антон Бекужев"</h3>
+                                <h3 class="review-name order-md-2">Антон Бекужев, ИП</h3>
                                 <p class="review-description">Спасибо МоментКредит за своевременную помощь с бизнесом. Закрыл пробелы.</p>
                             </div>
                         </div>
@@ -529,7 +532,7 @@
                                 </picture>
                             </div>
                             <div class="d-md-flex flex-md-column review-comment-container justify-content-lg-between">
-                                <h3 class="review-name order-md-2">ИП "Анастасия Кирпо"</h3>
+                                <h3 class="review-name order-md-2">Анастасия Кирпо, ИП</h3>
                                 <p class="review-description">Спасибо МоментКредит за решенную проблему. Быстро и
                                     качественно, рекомендую!</p>
                             </div>
@@ -559,7 +562,7 @@
                                 </picture>
                             </div>
                             <div class="d-md-flex flex-md-column review-comment-container justify-content-lg-between">
-                                <h3 class="review-name order-md-2">ИП "Надежда Севрукевич"</h3>
+                                <h3 class="review-name order-md-2">Надежда Севрукевич, ИП</h3>
                                 <p class="review-description">Разобрались очень быстро, кредит пришёл сразу на
                                     карту, осталась в восторге.</p>
                             </div>
@@ -589,22 +592,15 @@
         </div>
     </section>
     <section class="guarantee-section container">
-        <h2 class="guarantee-header">Публичный договор</h2>
+        <h2 class="guarantee-header">Клиентский Сервис</h2>
         <div class="d-flex flex-column flex-lg-row ">
             <div class="guarantee-info">
                 <!-- <h3 class="guarantee-subheader">Гарантия условий
                     закреплена в договоре</h3> -->
                 <p class="guarantee-description">
-                    Если сумма или ставка кредита Вас не устроят, мы не возьмем с Вас оплату за проделанную работу
+                    Более 90% клиентов рекомендуют нас и приходят повторно, потому что наша компания имеет большой опыт в сфере данных услуг.
                 </p>
-                <a class="pdf-link d-inline-block" href="./src/pdf/dogovorMKredit.pdf" target="_blank">Прочитать договор
-                    <picture>
-                        <source srcset="./src/images/icons/pdfArrow.webp" type="image/webp">
-                        <img class="pdf-link-image" src="./src/images/icons/pdfArrow.png"
-                             alt="Нажмите для ознакомления" loading="lazy">
-                    </picture>
-
-                </a>
+                <p class="guarantee-description">Мы предлагаем решение нестандартных запросов клиента, а также альтернативные варианты решения ваших задач.</p>
                 <p class="guarantee-description guarantee-description_bold">
                     Получите консультацию и узнайте о всех нюансах получения кредита конкретно в Вашей ситуации
                 </p>
@@ -631,10 +627,28 @@
         </button>
     </section>
     <section class="section-partners container">
-        <h2 class="partners-header">Наши основные партнеры</h2>
+        <h2 class="partners-header">Наши партнеры</h2>
         <div class="partners-div">
-            <img class="partners__img" src="./src/images/SBERBANKlogo.svg" alt="sber">
-            <img class="partners-vtb partners__img" src="./src/images/VTBlogo.png" alt="vtb">
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/SBERBANKlogo.svg" alt="sber"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/VTBlogo.png" alt="vtb"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bbelweb.jpg" alt="belweb"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bdabrabit.jpg" alt="dabrabit"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bmtb.png" alt="mtb"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bbelgazprom.jpg" alt="gazprom"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bbsbbank.png" alt="bsb"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bpriorbank.png" alt="prior"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bparitet.png" alt="paritet"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/balpha.png" alt="alpha"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/breshenie.png" alt="reshenie"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bavangard.png" alt="avangard"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bgeneral.jpeg" alt="general"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bavtomotor.jpg" alt="avto"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bmicro.png" alt="micro"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/balphaliz.png" alt="alphaliz"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bsberliz.png" alt="sberliz"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/brenaissance.png" alt="renaissance"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bproleasing.jpg" alt="pro"></div>
+            <div class="partners-div__item"><img class="partners__img" src="./src/images/bastraliz.png" alt="astra"></div>
         </div>
     </section>
     <section class="faq-section container">
@@ -762,8 +776,6 @@
                 <div class="requisites-container">
                     <h3 class="footer-header">Реквизиты</h3>
                     <p class="requisites-description">ООО "Момент Кредит", УНП: 193652121</p>
-                    <a class="footer-pdf-link" href="./src/pdf/dogovorMKredit.pdf" target="blank">Публичный
-                        договор</a>
                     <a class="footer-pdf-link" href="./src/pdf/politica_conf.pdf" target="blank">Политика конфиденциальности</a>
                 </div>
             </div>
@@ -778,7 +790,7 @@
         </div>
         <div class="d-flex flex-column flex-lg-column justify-content-lg-between site-info-container site-info-container_address align-items-lg-start">
             <p class="site-description site-description__address">
-                Юридический адрес: Республика Беларусь, г. Минск ул. Мележа 5/2 оф.1603
+                Юридический адрес: Республика Беларусь, г. Минск, пр. Дзержинского 3Б оф.97
             </p>
             <p class="site-description site-description__address">
                 Режим работы: пн-пт 10:00-20:00, сб-вс выходной
